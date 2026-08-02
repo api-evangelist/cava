@@ -1,0 +1,75 @@
+generated: '2026-08-02'
+method: searched
+source: https://cava.com/.well-known/
+host: https://cava.com
+notes: >-
+  cava.com sits behind Cloudflare in front of CloudFront/S3. Probes must be made over
+  HTTP/1.1 (HTTP/2 requests are challenged with a 403 by the edge). Missing
+  /.well-known/* keys are answered by the origin bucket with a 403 application/xml
+  AccessDenied body rather than a 404 — those rows are recorded as observed, and mean
+  "not published", not "blocked".
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  content_type: text/plain; charset=utf-8
+  file: cava-security.txt
+  spec: RFC 9116
+- path: /.well-known/openid-configuration
+  status: 403
+- path: /.well-known/oauth-authorization-server
+  status: 403
+- path: /.well-known/api-catalog
+  status: 403
+- path: /.well-known/ai-plugin.json
+  status: 403
+- path: /.well-known/agent-card.json
+  status: 403
+- path: /.well-known/agent.json
+  status: 403
+- path: /llms.txt
+  status: 200
+  content_type: text/plain
+  file: ../llms/cava-llms.txt
+- path: /robots.txt
+  status: 200
+- path: /sitemap.xml
+  status: 200
+other_hosts:
+- host: https://catering.cava.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: identical document, Canonical points back to https://cava.com/.well-known/security.txt
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /openapi.json
+    status: 404
+  - path: /swagger.json
+    status: 404
+- host: https://investor.cava.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: SPA catch-all — 200 text/html body "Invalid key", not a security.txt. REJECTED.
+  - path: /.well-known/agent-card.json
+    status: 200
+    note: same SPA catch-all, body "Invalid key" (text/html). REJECTED as a false positive.
+  - path: /llms.txt
+    status: 404
+- host: https://cavacatering.com
+  documents:
+  - path: /*
+    status: 200
+    note: >-
+      Parked/lander domain — every path returns 200 with a JS redirect to /lander.
+      All /.well-known/*, /openapi.json, /swagger.json and /llms.txt hits here are
+      false positives and are NOT recorded as published documents.
+x-evidence:
+  fetched: '2026-08-02'
+  method: HTTP/1.1 GET with a desktop browser user-agent

@@ -1,0 +1,30 @@
+# CAVA
+
+> CAVA is a Mediterranean fast-casual restaurant brand offering customizable bowls and pitas made with bold, healthy ingredients. This site lets guests explore the menu and nutrition, find restaurant locations, order online, join the CAVA Rewards program, and learn about the brand and careers.
+
+## Menu & Nutrition
+
+- [Menu](https://cava.com/menu): Curated bowls, pita wraps, salads, drinks, and other Mediterranean creations inspired by Greek cuisine; customize your order for takeout, delivery, or pickup.
+- [Nutrition](https://cava.com/nutrition): Nutritional and allergen guide for CAVA's menu; guests with allergies are advised to consult the app or a team member before ordering.
+- [Grocery](https://cava.com/grocery): CAVA's Mediterranean hummus, dips, and dressings made with fresh ingredients, available in grocery stores.
+
+## Locations & Ordering
+
+- [Locations](https://cava.com/locations): Find CAVA restaurants near you, with addresses, hours, and directions.
+- [Catering](https://catering.cava.com/): Order catering for corporate events, social gatherings, and team lunches, with customizable orders and quotes.
+- [Rewards](https://cava.com/rewards): Earn CAVA Rewards for every visit; sign up, download the CAVA app, and see which rewards are waiting for you.
+
+## Brand & About
+
+- [Our Story](https://cava.com/ourstory): CAVA's mission to bring heart, health, and humanity to food, honoring its Mediterranean roots through bold flavors and warm hospitality.
+- [Sustainability](https://cava.com/sustainability): CAVA's commitment to sustainability and social impact, including its published Impact Report.
+- [Animal Welfare](https://cava.com/animal-welfare): CAVA's commitment to sourcing premium, fresh ingredients and working with supply-chain partners who share its animal welfare values.
+- [News](https://cava.com/news): The latest news and updates from CAVA.
+
+## Careers
+
+- [Careers](https://cava.com/careers): Career opportunities across CAVA restaurants, corporate, and manufacturing.
+
+## Support
+
+- [Support & FAQ](https://support.cava.com/): CAVA support center with customer service resources and answers to frequently asked questions.

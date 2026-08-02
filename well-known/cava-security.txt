@@ -1,0 +1,5 @@
+Canonical: https://cava.com/.well-known/security.txt
+Contact: mailto:cybersecurity@cava.com
+Expires: 2029-09-25T09:12:00Z
+Hiring: https://cava.com/careers
+Preferred-Languages: en 

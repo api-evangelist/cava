@@ -1,17 +1,34 @@
 aid: cava
-name: Cava
-description: 'Cava is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: CAVA
+description: 'CAVA Group, Inc. (NYSE: CAVA) is a Washington, D.C.-headquartered Mediterranean
+  fast-casual restaurant company that operates the CAVA brand, serving customizable
+  bowls, pitas, salads and sides built on house-made dips, spreads and dressings. Alongside
+  its restaurants CAVA runs a consumer packaged goods line sold in grocery stores,
+  a digital ordering and delivery channel, a catering business at catering.cava.com,
+  and the CAVA Rewards loyalty program delivered through its iOS and Android apps.
+  The company listed on the New York Stock Exchange in June 2023 and reports an in-house
+  technology program — CavaCore, its data platform, and CAVA Current, a restaurant
+  operating system. CAVA publishes no public developer program, API documentation,
+  or machine-readable API contract; its public machine-readable surface is limited
+  to an RFC 9116 security.txt and a published llms.txt.'
 url: https://raw.githubusercontent.com/api-evangelist/cava/refs/heads/main/apis.yml
+image: https://cava.com/favicon.ico
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Company
+- Restaurants
+- Food and Beverage
+- Fast Casual
+- Hospitality
+- Consumer
+- Loyalty
+- Catering
+- Retail
+- Mediterranean
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,44 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/cava-vulnerability-disclosure.yml
+- type: Security
+  url: https://cava.com/.well-known/security.txt
+- type: DomainSecurity
+  url: security/cava-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/cava_stock/
+  url: https://cava.com/
+- type: Locations
+  url: https://cava.com/locations
+- type: Support
+  url: https://support.cava.com/
+- type: SignUp
+  url: https://cava.com/rewards
+- type: TermsOfService
+  url: https://cava.com/terms
+- type: PrivacyPolicy
+  url: https://cava.com/privacy
+- type: Blog
+  url: https://cava.com/news
+- type: News
+  url: https://cava.com/news
+- type: Investors
+  url: https://investor.cava.com/overview/default.aspx
+- type: GitHubOrganization
+  url: https://github.com/cavagrill
+- type: Careers
+  url: https://cava.com/careers
+- type: Sustainability
+  url: https://cava.com/sustainability
+- type: LLMsTxt
+  url: llms/cava-llms.txt
+- type: WellKnown
+  url: well-known/cava-well-known.yml
+- type: SecurityTxt
+  url: well-known/cava-security.txt
+x-enrichment:
+  date: '2026-08-02'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
