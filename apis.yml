@@ -12,6 +12,17 @@ description: 'CAVA Group, Inc. (NYSE: CAVA) is a Washington, D.C.-headquartered 
   or machine-readable API contract; its public machine-readable surface is limited
   to an RFC 9116 security.txt and a published llms.txt.'
 url: https://raw.githubusercontent.com/api-evangelist/cava/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cava.com/favicon.ico
 x-type: company
 x-source: harvest:secondary-market
