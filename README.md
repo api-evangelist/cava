@@ -64,34 +64,87 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-CAVA Group, Inc. (NYSE: CAVA) is a Washington, D.C.-headquartered Mediterranean fast-casual restaurant
-company operating the CAVA brand — customizable bowls, pitas, salads and sides built on house-made dips,
-spreads and dressings — alongside a grocery CPG line, digital ordering and delivery, catering, and the
-CAVA Rewards loyalty program delivered through its iOS and Android apps.
+CAVA Group, Inc. (NYSE: CAVA) is a Washington, D.C.-headquartered Mediterranean fast-casual restaurant company that operates the CAVA brand, serving customizable bowls, pitas, salads and sides built on house-made dips, spreads and dressings. Alongside its restaurants CAVA runs a consumer packaged goods line sold in grocery stores, a digital ordering and delivery channel, a catering business at catering.cava.com, and the CAVA Rewards loyalty program delivered through its iOS and Android apps. The company listed on the New York Stock Exchange in June 2023 and reports an in-house technology program — CavaCore, its data platform, and CAVA Current, a restaurant operating system. CAVA publishes no public developer program, API documentation, or machine-readable API contract; its public machine-readable surface is limited to an RFC 9116 security.txt and a published llms.txt.
 
-- Website: https://cava.com/
-- Support: https://support.cava.com/
-- Careers: https://cava.com/careers
-- Investors: https://investor.cava.com/overview/default.aspx
-- GitHub: https://github.com/cavagrill
+**Areas:** Company · Restaurant · Food and Beverage · Fast Casual · Hospitality · Consumer · Loyalty · Catering · Retail · Mediterranean
 
-## API surface
+## CAVA on APIs.io
 
-CAVA publishes **no public developer program, API documentation, or machine-readable API contract.**
-Contract discovery was run against `cava.com`, `catering.cava.com`, `investor.cava.com` and
-`cavacatering.com` — OpenAPI/Swagger paths, GraphQL, MCP `tools/list`, and both A2A agent-card
-well-known paths all missed. No agent card was found, so none is recorded.
+Everything profiled for CAVA is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cava/](https://apis.io/providers/cava/)** — or go straight to one of the APIs or properties below.
 
-What CAVA *does* publish machine-readably, and what this repo captures:
+### Published properties
 
-| Artifact | Method | Source |
-|---|---|---|
-| `well-known/cava-security.txt` | searched | https://cava.com/.well-known/security.txt (RFC 9116) |
-| `well-known/cava-well-known.yml` | searched | full `/.well-known/` probe index across four hosts |
-| `llms/cava-llms.txt` | searched | https://cava.com/llms.txt (verbatim) |
-| `security/cava-domain-security.yml` | probed | TLS/HSTS/DNSSEC/CAA/SPF/DMARC |
-| `security/cava-vulnerability-disclosure.yml` | searched | security.txt `Contact:` |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-> Probe note: the `cava.com` edge (Cloudflare in front of CloudFront/S3) answers HTTP/2 requests with a
-> 403 challenge. All probes above were made over **HTTP/1.1**. Unpublished `/.well-known/*` keys return a
-> 403 `application/xml` AccessDenied from the origin bucket rather than a 404.
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Cava Domain Security](https://apis.io/security/cava/cava-domain-security/)
+- [Cava Vulnerability Disclosure](https://apis.io/security/cava/cava-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://cava.com/)
+- [Sign up](https://cava.com/rewards)
+- [Support](https://support.cava.com/)
+- [Blog](https://cava.com/news)
+- [Security](https://cava.com/.well-known/security.txt)
+- [Terms of service](https://cava.com/terms)
+- [Privacy policy](https://cava.com/privacy)
+- [GitHub](https://github.com/cavagrill)
+
+## API Evangelist rating
+
+**Kin Score 15.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 34.2 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cava/](https://apis.io/providers/cava/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for CAVA: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cava/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
